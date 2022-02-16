@@ -6,6 +6,8 @@ public class Order {
 	private int totalValue;
 	//private double totalValue;
 	
+	private String[] items;
+		
 	
 	// totalValue = Double
 	
@@ -59,6 +61,34 @@ public class Order {
  		}
 	}
 	
+	public void listaItensWhile() {
+		int i = 0;
+		while(i < items.length) {
+			System.out.println(items[i]);
+			i++;
+		}
+	}
+	
+	public void listaItensDoWhile() {
+		int i = 0;
+		do {
+			System.out.println(items[i]);
+			i++;
+		} while (i < items.length);
+	}
+	
+	public void listaItensFor() {		
+		for (int i = 0; i < items.length; i++) {
+			System.out.println(items[i]);			
+	 	}		
+	}
+	
+	public void listaItensEnhancedFor() {
+		for (String i : items) {
+			System.out.println(i);
+		}
+	}
+	 
 	
 	@Override
 	public String toString() {
